@@ -1,0 +1,9 @@
+-----------------------------------------------------------------------------------
+¿Que es html?
+
+Html es un lenguaje que hace referencia al hipertexto y esto no es mas que navegar
+en distintos enlaces, html no es un lenguaje de programacion si no un lenguaje de 
+etiquetado
+------------------------------------------------------------------------------------
+
+Dentro de html todas las etiquetas que tienen una apertura deberan tener un cierre
