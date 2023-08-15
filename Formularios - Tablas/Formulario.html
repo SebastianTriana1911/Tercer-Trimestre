@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <!--Se abre una etiqueta form para crear un formulario-->
+        <form>
+            <!--Se abre una etiqueta div para cada etiqueta <label> ya que si no es
+            asi cada campo del formulario se queda en una sola linea, en cabio abriendo
+            la etiqueta <div> para cada columna se acegura que se englobe lo que 
+            significa que pase a la siguiente linea-->
+            <div>
+                <!-- Se abre una etiqueta label que permite crear una variable
+                por decirlo asi para el texto que se desea, esto se realiza con el
+                metodo for y asignandole el nombre de la "variable"-->
+                <label for = "nombre"> Nombre de usuario</label>
+                <!--Se abre una etiqueta input la cual permite que el 
+                usuario ingrese algun dato, en este caso sera su nombre y se le
+                pasa como metodo el id que llevara el nombre de la "variable" que
+                contiene el texto al que le desea realizar dicho input-->
+                <input id = "nombre">
+            </div>
+            <div>
+                <label for = "contraseña">Contraseña</label>
+                <input id = "contraseña">
+            </div>
+            <!--Se abre una etiqueta button que como su nombre lo dice
+            crea un boton y entre el etiqueta de apertura y de cierre se
+            puede colocar el nombre que vaya a tener dicho boton-->
+            <button>Enviar</button>
+        </form>
+    </body>
+</html>

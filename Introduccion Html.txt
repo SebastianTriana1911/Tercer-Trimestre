@@ -81,3 +81,27 @@ etiqueta a diferencia de la otra no enumera por cada lista, si no que a cada lis
 viñeta por defecto
 
 ----------------------------------------------------------------------------------------------
+
+La etiqueta <form> </form> permite crear formularios donde por una etiqueta input el usuario 
+pueda ingresar datos 
+
+----------------------------------------------------------------------------------------------
+
+La etiqueta <input> crea un espacio donde un usuario puede ingresar un dato
+
+----------------------------------------------------------------------------------------------
+
+La etiqueta <butoon> </button> crea un boton y entre la etiqueta de apertura y de cierre se
+puede ingresar el nombre que se le quiera poner a dicho boton
+
+----------------------------------------------------------------------------------------------
+
+La etiqueta <label> </label> permite crear una etiqueta, por ejemplo crearle una etiqueta a un 
+input, esto sirve para que el input reconozca el campo al que pertenece
+Ejemplo:
+<label for = "nombre"> Nombre de usuario</label>
+<input id = "nombre">
+El input se le esta asignando a la etiqueta label que tenga el nombre "nombre"
+
+----------------------------------------------------------------------------------------------
+
