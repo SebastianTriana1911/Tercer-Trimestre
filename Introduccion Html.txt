@@ -73,3 +73,11 @@ para enumerar un grupo determinado de listas
 ----------------------------------------------------------------------------------------------
 
 Las listas se crean con la etiqueta <li> </li> y viene de la palabra List Item
+
+----------------------------------------------------------------------------------------------
+
+La etiqueta <ul> </ul> significa listas desordenadas y viene de la palabra Unordered List, esta
+etiqueta a diferencia de la otra no enumera por cada lista, si no que a cada lista le pone una 
+viñeta por defecto
+
+----------------------------------------------------------------------------------------------
