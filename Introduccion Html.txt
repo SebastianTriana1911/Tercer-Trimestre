@@ -7,3 +7,69 @@ etiquetado
 ------------------------------------------------------------------------------------
 
 Dentro de html todas las etiquetas que tienen una apertura deberan tener un cierre
+
+------------------------------------------------------------------------------------
+
+Todo archivo html se inicia coun una etiqueta <html> </html>, la estructura de dicho
+archivo se compone de la etiqueta <html> </html>, la cabeza <head> </head> (Dentro de
+dicha cabeza es donde se ubica el titulo la descripcion las palabras claves etc..),
+el cuerpo <body> </body> (Dentro del cuerpo se encuentran los subtitulos los parrafos 
+y todo lo que se quiera que se muestre dentro de nuestro sitio web)
+
+------------------------------------------------------------------------------------
+
+A la hora de escribir en la etiqueta <body> </body> dos parrafos de texto, se mostrara 
+en el sitio web como un solo parrafo ya que lo interpreta como un solo elemento. Si se
+desea que se muestre en los dos parrafos se tienen que englobar cada texto en una 
+etiqueta por ejemplo en la etiqueta <p> </p> que permite crear diferentes parrafos 
+como la etiqueta <span> </span>
+
+-------------------------------------------------------------------------------------
+
+Hay una etiqueta especial dentro de la cabeza del archivo html (<head> </head>) que es la
+etiqueta <title> </title> que como su nombre lo indica funciona para añadir el titulo en la
+cabezera del archivo
+
+-------------------------------------------------------------------------------------
+
+Para comentariar el codigo de tu archivo html puedes usar esta etiqueta y nada de lo que
+escribas se va a guardar dentro del archivo (<!----->)
+
+--------------------------------------------------------------------------------------
+
+Una buena practica es que a la hora de crear un archivo html se coloque la etiqueta
+<!DOCTYPE html> que le indicara al navegador que lo que vamos a ejecutar es un archivo
+html
+
+---------------------------------------------------------------------------------------
+
+La etiqueta <h1> </h1> nos permite crear encabezados de un tamaño de letra alto y en negrilla
+como esta etiqueta hay desde el numero 1 hasta el numero 6 osea <h6> </h6>, entre mas alto sea
+el numero mas pequeño sera el encabezado
+
+----------------------------------------------------------------------------------------
+
+La etiqueta <div> </div> sirve como un contenedor el cual guarda un grupo de elementos tales
+como un texto, una imagen, un titulo, un parrafo etc.. dicho contenedor se puede manipular 
+directamente en css, manipulando dicho contenedor se puede manipular lo que esta explicitamente
+dentro, por ejemplo si hay un parrafo (<p>) dicho parrafo se puede cabiar de color y hacer 
+muchas variantes mas, solo a ese parrafo ya que se encuentra dentro del contenedor <div>
+
+------------------------------------------------------------------------------------------
+
+La etiqueta <a> </a> nos sirve para colocar enlaces, para que todo salga bien dicha etiqueta
+se le debe colocar el metodo <a href = "(Dentro de las comillas va el enlace al que se quiera mandar
+a la hora de cliquiar)"> es muy importante que dicho metodo con el enlace vaya adentro de la 
+etiqueta de apertura <a>, seguido de eso podremos colocar el texto al que se va a referenciar el 
+enlace y por ultimo cerrar la etiqueta
+Ejemplo:
+<a href = "https://google.com"> Enlace externo </a>
+
+---------------------------------------------------------------------------------------------
+
+La etiqueta <ol> </ol> significa listas ordenadas de la palabra Ordered List, la cual funciona
+para enumerar un grupo determinado de listas
+
+----------------------------------------------------------------------------------------------
+
+Las listas se crean con la etiqueta <li> </li> y viene de la palabra List Item
