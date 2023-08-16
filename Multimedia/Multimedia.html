@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia con HTML</title>
+    </head>
+    <body>
+        <h1>Imagen</h1>
+        <!--Se abre una etiqueta img que adentro se le asigna el metodo src="" al
+        cual se le pasa el nombre o la direccion en la que esta la imagen que se
+        desea mostrar, el metodo alt = "" que permite asignarle un nombre a la 
+        imagen que se desea abrir por si esta falla a la hora de ejecutarse y el
+        metodo width = "" que indica el ancho en pixeles de la imagen y el 
+        metodo height que indica lo largo
+        Una buena practica es ingresar todas las imagenes en una carpeta-->
+        <img src="Imagenes/imagen.jpg" alt ="Imagen" width = "350" height= "200"/>
+        <!--Se abre otra etiqueta img pero la diferencia es que en vez de guardar una
+        imagen en alguna carpeta del directorio del computador se puede extraer una 
+        imagen de un navegador solo copiando la dirrecion de dicha imagen-->
+        <img src = "https://kinsta.com/wp-content/uploads/2021/11/Untitled-54.png" alt = "Imagen" width="350" height="200"/>
+        
+        <h1>Video</h1>
+        <!--Se abre una etiqueta video, la cual por dentro contiene los metodos width
+        y heigth para indicar el ancho y el largo del video, ademas se le indica el
+        metodo controls para moder manipular el video (pausar,mover el minuto, poner
+        dicho video en pantalla grande) seguido de los metodos autoplay para que el
+        video se reproduzca solo, le sigue el metodo muted para mutiar dicho video
+        y le sigue el metodo loop para que se reproduzca de nuevo cuando este se acabe-->
+        <video width = "350" heigth = "200" controls autoplat muted loop>
+            <!--Se abre una etiqueta source dentro de las etiquetas video para que 
+            dentro de esta etiqueta se asigne la direccion en la que esta el video
+            con el metodo src y se le asigne el tipo de video que en este caso es 
+            type="video.mp4"-->
+            <source src="Videos/Video.mp4" type="video/mp4" />
+        </video>
+
+        <h1>Audio</h1>
+        <!--Se abre una etiqueta de audio  -->
+        <audio controls>
+            <source src="Audios/audio.wav" type = "audio/wav" />
+        </audio>
+    </body>
+</html>

@@ -190,3 +190,66 @@ encabezado
 Para ingresar informacion dentro de una table se tiene que abrir la etiqueta <tr> para abrir una 
 fila y dentro de esta etiqueta se abre <td> que nos permite ingresar informacion a la columna segun
 el orden en el que estas vayan
+
+----------------------------------------------------------------------------------------------
+
+A la hora de insertar una imagen en un archivo html se hace con la etiqueta <img> y desntro de 
+esta se debe ingresar el metodo src = "" y dentro de las comillas el nombre de la imagen que se
+desea mostrar. Cabe aclarar que la etiqueta img solo tiene apertura y auto cierre no como las 
+demas etiquetas
+
+----------------------------------------------------------------------------------------------
+
+Si se tiene algun error con dicha imagen esta el metodo alt = "" donde se le pasa algun nombre
+a la imagen que no quiso abrir
+
+----------------------------------------------------------------------------------------------
+
+Si queremos poner en algun tamaño una imagen a la etiqueta img se le emplea el metodo width = ""
+este nos permite entre las comillas capturar el numero de pixeles que se desea que tenga la imagen
+a lo ancho
+
+----------------------------------------------------------------------------------------------
+
+Si queremos poner en algun tamaño una imagen a la etiqueta img se le emplea el metodo heigt = ""
+este nos permite entre las comillas capturar el numero de pixeles que se desea que tenga la imagen
+a lo largo
+
+----------------------------------------------------------------------------------------------
+
+Para mostrar un video en el archivo es necesario utilizar las etiquetas <video> y adentro de la
+etiqueta de apertura asignarle el tamaño a lo largo y a lo ancho con el metodo width y el metodo
+height, para que dicho video tenga la barra donde se puede manipular dicho video es necesario 
+colocar el metodo controls
+
+----------------------------------------------------------------------------------------------
+
+Si se quiere que el video se reproduzca apenas se cargue la pagina, dentro de la apertura de la
+etiqueta video se debe asignarle el metodo autoplay, pero si se desea que este no tenga sonido 
+que es lo mas recomendable para una buena experiencia de usuario, se le asigna el metodo muted
+para que este se reproduzca sin sonido
+
+----------------------------------------------------------------------------------------------
+
+Dentro de la etiqueta <video> se abre una etiqueta <source> que esta no contiene etiqueta de
+cierre, por ende en la etiqueta de apertura se le debe asignar el metodo src ="" y indicarle el 
+sitio en el que esta el video, y seguido del metodo type = "" que si es un video en mp4 se ingresa
+type = "video/mp4"
+
+----------------------------------------------------------------------------------------------
+
+Si se desea que el video se siga reproduciendo aun asi se haya acabado dentro de la etiqueta 
+source se debe poner el metodo loop
+
+----------------------------------------------------------------------------------------------
+
+A la hora de querer tener un audio en el archivo toca abrir una etiqueta <audio> la cual tiene
+apertura y cierre dentro de la etiqueta de apertura se puede ingresar el metodo controls para 
+que el audio tenga una estructura en la cual se pueda manupular dicho audio, para ingresar el
+audio que queremos que se muestre, dentro de la etiqueta <audio> abrimos la etiqueta <source>
+en la cual le pasamos el metodo src para ingresar la direccion de donde se encuentra el audio 
+que queremos reproducir, y el metodo type donde se indica que es un audio/(mas el formato en 
+que dicho audio esta)
+
+----------------------------------------------------------------------------------------------
+
