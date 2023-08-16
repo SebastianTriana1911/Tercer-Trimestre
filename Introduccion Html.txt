@@ -105,3 +105,80 @@ El input se le esta asignando a la etiqueta label que tenga el nombre "nombre"
 
 ----------------------------------------------------------------------------------------------
 
+El metodo action="" que se le asigna al metodo form hace referencia a la url o el archivo al que
+se quiere enviar el formulario una vez este diligenciado
+Ejemplo: 
+<form action = "Resultado.html">
+En este caso el formulario a la hora de enviar lo esta llevando al archivo resultado.html
+
+----------------------------------------------------------------------------------------------
+
+Si se quiere que el archivo donde se envia el formulario tenga acceso a los datos de dicho formulario
+es necesario pasarle el atributo name="" al archivo input
+
+----------------------------------------------------------------------------------------------
+
+Cuando se realizan los formularios existen dos tipos de metodos esta el que es pro defecto que es el 
+el metodo method = "GET" que es el que puede gestionar el navegador, y si en cambio se tiene un servidor
+que se desea que haga algo con la informacion del formulario se emplea el metodo method = "POST", que 
+sirve para hacer alguna accion desde el archivo al que se va a enviar
+
+----------------------------------------------------------------------------------------------
+
+La etiqueta textarea nos permite tener un campo con mayor espacion y donde se puede regular para
+poder que un usuario ingrese datos, es casi lo mismo que la etiqueta input solo que esta permite
+un espacio de texto mas extenso
+
+----------------------------------------------------------------------------------------------
+
+La etiqueta <br> nos permite hacer un salto de linea lo que en python es un \n
+
+----------------------------------------------------------------------------------------------
+
+Existen dos tipos de metodos en la etiqueta <button> lo que quiere decir que hay dos tipos de 
+botones, uno es el tipo de reseteo (Cuando se da click a dicho boton se resetea la informacio
+que se haya diligenciado) y el otro es el tipo de enviar (Cuando se da click a dicho boton lo manda
+al archivo o url que se le haya asignado al formulario con el metodo action)
+<button type = "reset"> Reseteo </button>
+<button type = "submit"> Envios </button>
+
+----------------------------------------------------------------------------------------------
+
+Cuando se requere que un campo de un formulario sea diligenciado a la etiqueta que contenga el 
+campo de texto puede ser input o textarea se le tiene que pasar el metodo required
+
+----------------------------------------------------------------------------------------------
+
+Cuando se desea que un campo de un formulario sea de algun tipo especial dentro de las etiquetas
+de texto (input, textarea) se le asigna el metodo type = "" si se desea que sea de tipo texto se
+ingresa entre las comillas la palabra text
+
+----------------------------------------------------------------------------------------------
+
+Si se desea que lo que se ingrese no se vea, osea sea "incriptado", entre las comillas se ingresa 
+la palabra password type = "password" 
+
+----------------------------------------------------------------------------------------------
+
+Cuando se desea que sea de tipo numerico, entre las comillas se ingresa la palabra number 
+type = "number" y si se desea que tenga un limite osea un dato minimo, por ejemplo una edad que 
+la edad minima sea de 5 para arriba se ingresa el metodo min = "" y entre las comillas el numero 
+minimo al que se puede acceder tambien esta el metodo max = "" que asegura el numero maximo que se
+puede ingresar, y si se desea que el conteo sea de 2 en 2 de 3 en 3 de 4 en 4 etc se realiza con el
+metodo step = "" y dentro de las comillas el conteo que se desea que realize el tipo de dato numerico
+asi se asegura de que lo que se ingrese sea solo numeros
+
+----------------------------------------------------------------------------------------------
+
+Cuando se desea que se ingrese un email se le asigna al metodo type la palabra email, asi reconocera
+que en ese campo se necesita ingresar un email, type = "email"
+
+----------------------------------------------------------------------------------------------
+
+Cuando se desea ingresar una fecha en in formulario mediante la etiqueta input se le asigna el metodo 
+type = "" y entre las comillas date (Significa fecha)
+
+----------------------------------------------------------------------------------------------
+
+
+

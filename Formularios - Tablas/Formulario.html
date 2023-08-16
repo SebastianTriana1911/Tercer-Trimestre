@@ -5,7 +5,7 @@
     </head>
     <body>
         <!--Se abre una etiqueta form para crear un formulario-->
-        <form>
+        <form action = "Resultado.html" method = "GET">
             <!--Se abre una etiqueta div para cada etiqueta <label> ya que si no es
             asi cada campo del formulario se queda en una sola linea, en cabio abriendo
             la etiqueta <div> para cada columna se acegura que se englobe lo que 
@@ -14,21 +14,72 @@
                 <!-- Se abre una etiqueta label que permite crear una variable
                 por decirlo asi para el texto que se desea, esto se realiza con el
                 metodo for y asignandole el nombre de la "variable"-->
-                <label for = "nombre"> Nombre de usuario</label>
+                <label for = "nombre" > Nombre de usuario</label>
                 <!--Se abre una etiqueta input la cual permite que el 
                 usuario ingrese algun dato, en este caso sera su nombre y se le
                 pasa como metodo el id que llevara el nombre de la "variable" que
                 contiene el texto al que le desea realizar dicho input-->
-                <input id = "nombre">
+                <input type = "text" name = "nombre" id = "nombre" required>
+            <div>
+                <br>
+                <!--Se crea un nuevo campo con la etiqueta label quue se va a llamar
+                Comentarios y por el metodo for le asigno la "variable" por la cual 
+                se va a reconocer-->
+                <label for = "comentarios">Comentarios</label>
+                <!--Se crea una etiqueta <textarea> que nos permite tener un margen 
+                de insercion de texto un poco mas grande que la etiqueta input y se
+                le asigna el metodo name que corresponde a lo que va contener lo que 
+                el usuario ingrese y la etiqueta id que hace referencia al campo al que
+                va a estar relacionado la etiqueta textarea-->
+                <textarea name = "comentarios" id = "comentarios"></textarea> 
+            </div>
+            <br>
             </div>
             <div>
                 <label for = "contraseña">Contraseña</label>
-                <input id = "contraseña">
+                <input  type = "password" name = "contraseña" id = "contraseña" required>
             </div>
+            <div>
+                <!--Se crea otro campo en el formulario para hacer evidencia de los tipos
+                de datos que se pueden ingresar por medio de las etiquetas input y textarea,
+                en este caso se emplea en la etiqueta input un metodo type de tipo numerico
+                (number) y se le esta empleado el metodo min = "" que permite acceder al numero
+                minimo que se le pongan dentro de las comillas que en este caso es 5 y tambien se
+                puede realizar lo mismo con el metodo max = "" que recibe entre las comillas el 
+                numero maximo que se puede ingresar-->
+                <br>
+                <label for = "edad">Edad</label>
+                <input  type = "number" name = "edad" id = "edad" min = "5" max = "80">
+            </div>
+            <div>
+                <!--Se crea otro campo en el formulario para hacer evidencia de los tipos
+                de datos que se pueden ingresar por medio de las etiquetas input y textarea,
+                en este caso se emplea en la etiqueta input un metodo type de tipo email
+                (email)-->
+                <br>
+                <label for = "correo">Correo</label>
+                <input  type = "email" name = "correo" id = "correo">
+            </div>
+            <div>
+                <!--Se crea otro campo en el formulario para hacer evidencia de los tipos
+                de datos que se pueden ingresar por medio de las etiquetas input y textarea,
+                en este caso se emplea en la etiqueta input un metodo type de tipo  date (fecha)-->
+                <br>
+                <label for = "fecha">Fecha de nacimiento</label>
+                <input  type = "date" name = "fechaNac" id = "fecha">
+            </div>
+            <br>
             <!--Se abre una etiqueta button que como su nombre lo dice
             crea un boton y entre el etiqueta de apertura y de cierre se
             puede colocar el nombre que vaya a tener dicho boton-->
             <button>Enviar</button>
+            <!--Se abre una etiqueta butoon pero ahora asignandole el tipo de boton que 
+            va a ser en este caso va a ser de tipo type = "reset"-->
+            <button type = "reset"> Reseteo </button>
+            <!--Se abre una etiqueta button pero ahora asignandole que va a ser de tipo
+            type = "submit" que envia dicho formulario a una url o archivo que se le haya 
+            asignado a la etiqueta form mediante el metodo action-->
+            <button type = "submit"> Envios </button>
         </form>
     </body>
 </html>
