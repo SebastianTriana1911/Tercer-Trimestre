@@ -180,5 +180,13 @@ type = "" y entre las comillas date (Significa fecha)
 
 ----------------------------------------------------------------------------------------------
 
+Etiqueta <table> como se sabe las tablas se dividen por columnas y filas, para definir una fila
+dentro de la etiqueta <table> se agrega la etiqueta <tr> y si queremos que dicha tabla tenga 
+encabezados dentro de la etiqueta <tr> se emplea la etiqueta <th> que nos sirve para indicar un
+encabezado
 
+----------------------------------------------------------------------------------------------
 
+Para ingresar informacion dentro de una table se tiene que abrir la etiqueta <tr> para abrir una 
+fila y dentro de esta etiqueta se abre <td> que nos permite ingresar informacion a la columna segun
+el orden en el que estas vayan
