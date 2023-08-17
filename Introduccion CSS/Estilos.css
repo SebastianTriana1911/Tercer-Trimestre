@@ -1,0 +1,26 @@
+/* A todas las etiquetas h1 se le modifican dichas cosas */
+h1 {
+    /* color: Cambia de color todo el texto */
+    color:black;
+    /* text-transfrom: uppercase: Combierte todo el texto en mayuscula */
+    text-transform: uppercase;
+    /* font-size: Cambia el tamaño de la fuente "texto"*/
+    font-size: 20pt;
+}
+
+/*A la etiqueta p con id (parrafo1 y parrafo2) se modifican dichas cosas */
+p#parrafo1, p#parrafo2 {
+    /* color: Cambia de color todo el texto */
+    color :blue;
+    /* text-decoration: underline: Subraya todo el texto */
+    text-decoration: underline;
+} 
+
+/*A la etiqueta p con id (parrafo3) y etiqueta span con id (parrafo4) se 
+modifican dichas cosas */
+p#parrafo3, span#parrafo4 {
+    /* color: Cambia de color todo el texto */
+    color:rgb(255, 47, 47);
+    /* text-decoration: underline: Subraya todo el texto */
+    text-decoration: underline;
+}

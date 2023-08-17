@@ -1,14 +1,19 @@
 -----------------------------------------------------------------------------------
-¿Que es html?
+HTML INTRODUCCION
 
+¿Que es html?
 Html es un lenguaje que hace referencia al hipertexto y esto no es mas que navegar
 en distintos enlaces, html no es un lenguaje de programacion si no un lenguaje de 
 etiquetado
-------------------------------------------------------------------------------------
 
 Dentro de html todas las etiquetas que tienen una apertura deberan tener un cierre
 
 ------------------------------------------------------------------------------------
+ESTRUCTURA HTML
+
+Una buena practica es que a la hora de crear un archivo html se coloque la etiqueta
+<!DOCTYPE html> que le indicara al navegador que lo que vamos a ejecutar es un archivo
+html
 
 Todo archivo html se inicia coun una etiqueta <html> </html>, la estructura de dicho
 archivo se compone de la etiqueta <html> </html>, la cabeza <head> </head> (Dentro de
@@ -17,6 +22,7 @@ el cuerpo <body> </body> (Dentro del cuerpo se encuentran los subtitulos los par
 y todo lo que se quiera que se muestre dentro de nuestro sitio web)
 
 ------------------------------------------------------------------------------------
+PARRAFOR  HTML
 
 A la hora de escribir en la etiqueta <body> </body> dos parrafos de texto, se mostrara 
 en el sitio web como un solo parrafo ya que lo interpreta como un solo elemento. Si se
@@ -25,37 +31,36 @@ etiqueta por ejemplo en la etiqueta <p> </p> que permite crear diferentes parraf
 como la etiqueta <span> </span>
 
 -------------------------------------------------------------------------------------
+TITULO HTML
 
 Hay una etiqueta especial dentro de la cabeza del archivo html (<head> </head>) que es la
 etiqueta <title> </title> que como su nombre lo indica funciona para añadir el titulo en la
 cabezera del archivo
 
 -------------------------------------------------------------------------------------
+COMENTARIOS EN ARCHIVO HTML
 
 Para comentariar el codigo de tu archivo html puedes usar esta etiqueta y nada de lo que
 escribas se va a guardar dentro del archivo (<!----->)
 
 --------------------------------------------------------------------------------------
+ENCABEZADOS HTML
 
-Una buena practica es que a la hora de crear un archivo html se coloque la etiqueta
-<!DOCTYPE html> que le indicara al navegador que lo que vamos a ejecutar es un archivo
-html
-
----------------------------------------------------------------------------------------
-
-La etiqueta <h1> </h1> nos permite crear encabezados de un tamaño de letra alto y en negrilla
+La etiqueta <h1> </h1> nos permite crear encabezados de un tamaño de letra grande y en negrilla
 como esta etiqueta hay desde el numero 1 hasta el numero 6 osea <h6> </h6>, entre mas alto sea
 el numero mas pequeño sera el encabezado
 
 ----------------------------------------------------------------------------------------
+CONTENEDOR HTML <div> </div>
 
 La etiqueta <div> </div> sirve como un contenedor el cual guarda un grupo de elementos tales
 como un texto, una imagen, un titulo, un parrafo etc.. dicho contenedor se puede manipular 
 directamente en css, manipulando dicho contenedor se puede manipular lo que esta explicitamente
-dentro, por ejemplo si hay un parrafo (<p>) dicho parrafo se puede cabiar de color y hacer 
+dentro, por ejemplo si hay un parrafo (<p>) dicho parrafo se puede cambiar de color y hacer 
 muchas variantes mas, solo a ese parrafo ya que se encuentra dentro del contenedor <div>
 
 ------------------------------------------------------------------------------------------
+ENLACES HTML <a> </a>
 
 La etiqueta <a> </a> nos sirve para colocar enlaces, para que todo salga bien dicha etiqueta
 se le debe colocar el metodo <a href = "(Dentro de las comillas va el enlace al que se quiera mandar
@@ -66,35 +71,22 @@ Ejemplo:
 <a href = "https://google.com"> Enlace externo </a>
 
 ---------------------------------------------------------------------------------------------
+LISTAS HTML
 
 La etiqueta <ol> </ol> significa listas ordenadas de la palabra Ordered List, la cual funciona
 para enumerar un grupo determinado de listas
 
-----------------------------------------------------------------------------------------------
-
 Las listas se crean con la etiqueta <li> </li> y viene de la palabra List Item
-
-----------------------------------------------------------------------------------------------
 
 La etiqueta <ul> </ul> significa listas desordenadas y viene de la palabra Unordered List, esta
 etiqueta a diferencia de la otra no enumera por cada lista, si no que a cada lista le pone una 
 viñeta por defecto
 
 ----------------------------------------------------------------------------------------------
+FORMULARIOS HTML
 
 La etiqueta <form> </form> permite crear formularios donde por una etiqueta input el usuario 
 pueda ingresar datos 
-
-----------------------------------------------------------------------------------------------
-
-La etiqueta <input> crea un espacio donde un usuario puede ingresar un dato
-
-----------------------------------------------------------------------------------------------
-
-La etiqueta <butoon> </button> crea un boton y entre la etiqueta de apertura y de cierre se
-puede ingresar el nombre que se le quiera poner a dicho boton
-
-----------------------------------------------------------------------------------------------
 
 La etiqueta <label> </label> permite crear una etiqueta, por ejemplo crearle una etiqueta a un 
 input, esto sirve para que el input reconozca el campo al que pertenece
@@ -103,37 +95,38 @@ Ejemplo:
 <input id = "nombre">
 El input se le esta asignando a la etiqueta label que tenga el nombre "nombre"
 
-----------------------------------------------------------------------------------------------
-
 El metodo action="" que se le asigna al metodo form hace referencia a la url o el archivo al que
 se quiere enviar el formulario una vez este diligenciado
 Ejemplo: 
 <form action = "Resultado.html">
 En este caso el formulario a la hora de enviar lo esta llevando al archivo resultado.html
 
-----------------------------------------------------------------------------------------------
-
 Si se quiere que el archivo donde se envia el formulario tenga acceso a los datos de dicho formulario
 es necesario pasarle el atributo name="" al archivo input
-
-----------------------------------------------------------------------------------------------
 
 Cuando se realizan los formularios existen dos tipos de metodos esta el que es pro defecto que es el 
 el metodo method = "GET" que es el que puede gestionar el navegador, y si en cambio se tiene un servidor
 que se desea que haga algo con la informacion del formulario se emplea el metodo method = "POST", que 
 sirve para hacer alguna accion desde el archivo al que se va a enviar
 
+
+Cuando se require que un campo de un formulario sea diligenciado a la etiqueta que contenga el 
+campo de texto puede ser input o textarea se le tiene que pasar el metodo required
+
 ----------------------------------------------------------------------------------------------
+INSERCION DE TEXTOS HTML
+
+La etiqueta <input> crea un espacio donde un usuario puede ingresar un dato
 
 La etiqueta textarea nos permite tener un campo con mayor espacion y donde se puede regular para
 poder que un usuario ingrese datos, es casi lo mismo que la etiqueta input solo que esta permite
 un espacio de texto mas extenso
 
 ----------------------------------------------------------------------------------------------
+BOTONES HTML
 
-La etiqueta <br> nos permite hacer un salto de linea lo que en python es un \n
-
-----------------------------------------------------------------------------------------------
+La etiqueta <butoon> </button> crea un boton y entre la etiqueta de apertura y de cierre se
+puede ingresar el nombre que se le quiera poner a dicho boton
 
 Existen dos tipos de metodos en la etiqueta <button> lo que quiere decir que hay dos tipos de 
 botones, uno es el tipo de reseteo (Cuando se da click a dicho boton se resetea la informacio
@@ -143,23 +136,23 @@ al archivo o url que se le haya asignado al formulario con el metodo action)
 <button type = "submit"> Envios </button>
 
 ----------------------------------------------------------------------------------------------
+SALTOS DE LINEA HTML
 
-Cuando se requere que un campo de un formulario sea diligenciado a la etiqueta que contenga el 
-campo de texto puede ser input o textarea se le tiene que pasar el metodo required
+La etiqueta <br> nos permite hacer un salto de linea lo que en python es un \n
 
 ----------------------------------------------------------------------------------------------
+TIPOS DE DATOS HTML
 
+Texto
 Cuando se desea que un campo de un formulario sea de algun tipo especial dentro de las etiquetas
 de texto (input, textarea) se le asigna el metodo type = "" si se desea que sea de tipo texto se
 ingresa entre las comillas la palabra text
 
-----------------------------------------------------------------------------------------------
-
+Password
 Si se desea que lo que se ingrese no se vea, osea sea "incriptado", entre las comillas se ingresa 
 la palabra password type = "password" 
 
-----------------------------------------------------------------------------------------------
-
+Numerico
 Cuando se desea que sea de tipo numerico, entre las comillas se ingresa la palabra number 
 type = "number" y si se desea que tenga un limite osea un dato minimo, por ejemplo una edad que 
 la edad minima sea de 5 para arriba se ingresa el metodo min = "" y entre las comillas el numero 
@@ -168,80 +161,68 @@ puede ingresar, y si se desea que el conteo sea de 2 en 2 de 3 en 3 de 4 en 4 et
 metodo step = "" y dentro de las comillas el conteo que se desea que realize el tipo de dato numerico
 asi se asegura de que lo que se ingrese sea solo numeros
 
-----------------------------------------------------------------------------------------------
-
+Email
 Cuando se desea que se ingrese un email se le asigna al metodo type la palabra email, asi reconocera
 que en ese campo se necesita ingresar un email, type = "email"
 
-----------------------------------------------------------------------------------------------
-
+Fecha
 Cuando se desea ingresar una fecha en in formulario mediante la etiqueta input se le asigna el metodo 
 type = "" y entre las comillas date (Significa fecha)
 
 ----------------------------------------------------------------------------------------------
+TABLAS EN HTML
 
 Etiqueta <table> como se sabe las tablas se dividen por columnas y filas, para definir una fila
 dentro de la etiqueta <table> se agrega la etiqueta <tr> y si queremos que dicha tabla tenga 
 encabezados dentro de la etiqueta <tr> se emplea la etiqueta <th> que nos sirve para indicar un
 encabezado
 
-----------------------------------------------------------------------------------------------
-
 Para ingresar informacion dentro de una table se tiene que abrir la etiqueta <tr> para abrir una 
 fila y dentro de esta etiqueta se abre <td> que nos permite ingresar informacion a la columna segun
 el orden en el que estas vayan
 
 ----------------------------------------------------------------------------------------------
+IMAGENES HTML
 
-A la hora de insertar una imagen en un archivo html se hace con la etiqueta <img> y desntro de 
+A la hora de insertar una imagen en un archivo html se hace con la etiqueta <img> y dentro de 
 esta se debe ingresar el metodo src = "" y dentro de las comillas el nombre de la imagen que se
 desea mostrar. Cabe aclarar que la etiqueta img solo tiene apertura y auto cierre no como las 
 demas etiquetas
 
-----------------------------------------------------------------------------------------------
-
 Si se tiene algun error con dicha imagen esta el metodo alt = "" donde se le pasa algun nombre
 a la imagen que no quiso abrir
-
-----------------------------------------------------------------------------------------------
 
 Si queremos poner en algun tamaño una imagen a la etiqueta img se le emplea el metodo width = ""
 este nos permite entre las comillas capturar el numero de pixeles que se desea que tenga la imagen
 a lo ancho
-
-----------------------------------------------------------------------------------------------
 
 Si queremos poner en algun tamaño una imagen a la etiqueta img se le emplea el metodo heigt = ""
 este nos permite entre las comillas capturar el numero de pixeles que se desea que tenga la imagen
 a lo largo
 
 ----------------------------------------------------------------------------------------------
-
+VIDEOS HTML
+ 
 Para mostrar un video en el archivo es necesario utilizar las etiquetas <video> y adentro de la
 etiqueta de apertura asignarle el tamaño a lo largo y a lo ancho con el metodo width y el metodo
 height, para que dicho video tenga la barra donde se puede manipular dicho video es necesario 
 colocar el metodo controls
-
-----------------------------------------------------------------------------------------------
 
 Si se quiere que el video se reproduzca apenas se cargue la pagina, dentro de la apertura de la
 etiqueta video se debe asignarle el metodo autoplay, pero si se desea que este no tenga sonido 
 que es lo mas recomendable para una buena experiencia de usuario, se le asigna el metodo muted
 para que este se reproduzca sin sonido
 
-----------------------------------------------------------------------------------------------
-
 Dentro de la etiqueta <video> se abre una etiqueta <source> que esta no contiene etiqueta de
 cierre, por ende en la etiqueta de apertura se le debe asignar el metodo src ="" y indicarle el 
 sitio en el que esta el video, y seguido del metodo type = "" que si es un video en mp4 se ingresa
 type = "video/mp4"
 
-----------------------------------------------------------------------------------------------
-
 Si se desea que el video se siga reproduciendo aun asi se haya acabado dentro de la etiqueta 
 source se debe poner el metodo loop
 
 ----------------------------------------------------------------------------------------------
+AUDIOS HTML
 
 A la hora de querer tener un audio en el archivo toca abrir una etiqueta <audio> la cual tiene
 apertura y cierre dentro de la etiqueta de apertura se puede ingresar el metodo controls para 
@@ -252,4 +233,98 @@ que queremos reproducir, y el metodo type donde se indica que es un audio/(mas e
 que dicho audio esta)
 
 ----------------------------------------------------------------------------------------------
+CONEXION HTML Y CSS
 
+Para que un archivo html tenga conexion con el css ahi que abrir una etiqueta llamada <link>
+la cual no tiene apertura de cierre por ende dentro de la apretura hay que añadir el metodo
+rel = "stylesheet" seguido del href = "" el cual dentro de las comillas se le debe de colocar
+el lugar en donde se encuentra nuertro archivo css
+
+----------------------------------------------------------------------------------------------
+CSS
+
+La manera de utilizar css es escribiendo las etiquetas las cuales deseamos manipular, cambiandole
+el estilo el color entre otras cosas, luego de ya haber definido que etiqueta deseamos modificar
+deberemos abrir unas llaves {} y de debe de insertar los comandos css  dentro de estas como si 
+de java scrip se tratase, despues de cada comando se debe insertar un (;)
+
+----------------------------------------------------------------------------------------------
+COMENTARIOS CSS
+
+Si se desea implementar comentarios en css se debe de ingresar /*(el comentario que se desea 
+colocar)*/
+
+----------------------------------------------------------------------------------------------
+ACCEDER A UNA ETIQUETA EN ESPECIAL EN CSS
+
+Cuando deseamos cambiar el estilo de una etiqueta por lo general se coloca la etiqueta, pero esto 
+esta mal, pues colocando solo la etiqueta segun el cambio que le vayamos a dar se vera visualizado
+en todos los componentes que tenga dicha etiqueta, por esta razon la mejor opcion es a cada etiqueta
+asignarle un seleptor, en este caso utilizaremos el id, en css ya en vez de querer manipular la 
+etiqueta se le pasa el nombre del selector que tiene la etiqueta y antes del nombre tiene que ir
+la etiqueta que contiene dicho selector seguido del numeral (#) y ahi si el nombre del selector
+Ejemplo
+p#selector {
+    color: red;
+}
+
+Si el selector en vez de un id es class en vez de un numeral se le asigna un punto
+p.selector {
+    color: red;
+}
+
+Nota: El nombre del selector no debe de tener espacio ya que genera error en el css
+
+Cuando se quiere modificar una cosa en especial a varias etiquetas diferentes en vez de hacerlo
+uno por uno se pueden definir varios selectores al mismo tiempo, si es class se define con un (.)
+si es id se define con un numeral (#)
+
+p#selector, .autor, p#encabezado {
+    color: red;
+}
+
+----------------------------------------------------------------------------------------------
+COMANDOS CSS
+
+- color: cambia el color de la etiqueta que se le este pasando
+
+- font-size: cambia el tamaño de la etiqueta que se le este pasando, (Se le debe pasar el numero
+de tamaño que se le desea dar seguido de pt)
+
+- text-transform: Especifica el cambio entre mayúsculas y minúsculas del texto de un elemento.
+Puede ser usada para que un texto aparezca completamente en mayúsculas, en minúsculas, o con la 
+primera letra de cada palabra en mayúscula.
+Alguna de sus propiedades son:
+Capitalize: Escribe el primer caracter en mayuscula
+Uppercase: Escribe en mayuscula todos los caracteres de cada palabra
+Lowecase: Usa letras pequeñas para todos los caracteres de cada palabra
+
+- text-decoration: underline subraya cualquier texto
+
+----------------------------------------------------------------------------------------------
+COLORES CSS
+
+Cooles: Una pagina que ofrece variedad de paletas de colores el cual los colores estan en 
+formato hexadecimal, lo que quiere decir que nos servira para la paleta de color en css
+
+----------------------------------------------------------------------------------------------
+FONDOS CONTENEDOR
+
+Para asignarle un color a un contenedor es necesario el background, si se desea colocar un color
+predeterminado es con el comando background-color
+
+Si se desea asignar una imagen en el contenedor se hace con el comando background-img segido de 
+url() y dentro de los parentesis la url de dicha imagen que se desea colocar
+
+Para manipular la imagen que le demos como fondo al contenedor es con el comando background-position:
+y pasandole los dos valores en modo x, y. Por ejemplo center center y la imagen se quedara en el 
+centro
+
+----------------------------------------------------------------------------------------------
+TAMAÑOS EN CONTENEDORES CSS
+
+- Ancho: Para ajustar el ancho de un contenedor se utiliza la propiedad width: y se le pasa el 
+numero de pixeles que se quiere que se tenga dicho contenedor (100px)
+
+- Alto: Para ajustar la altura de un contenedor se utiliza la propiedad height: y se le pasa el 
+numero de pixeles que se quiere que se tenga dicho contenedor (100px)

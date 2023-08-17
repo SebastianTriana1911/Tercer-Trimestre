@@ -1,0 +1,57 @@
+/*Estilo de colores */
+
+/* Color predefinido */
+h3#colores {
+    color: red
+}
+
+/* Color hexadecimal (Coloors) */
+p#hexadecimal {
+    color: #FF6392
+}
+
+/* Color rgb - colores un poco intensos */
+p#rgb {
+    color: rgb(80, 100, 200)
+}
+
+/* Color rgba - colores opacos */
+p#rbga {
+    color: rgba(70, 200, 250, 100)
+}
+
+/* Color a un contenedor */
+div#contenedor {
+    /* background-image: Permite insertar una imagen en el fondo del contenedor
+    seguido de url() donde adentro del parentesis se le pasa la url de la img */
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    
+    /* background-position: Permite manejar la posicion de la imagen en x, y */ 
+    background-position: left above;
+}
+
+p#parrafin, p#parrafin2 {
+    color: white;
+}
+
+/* Tamaños */
+div#alto {
+    background-color: #B3EFB2;
+    width: 200px;
+}
+
+div#ancho {
+    background-color: #9A348E;
+    height: 35px;
+}
+
+/* Bordes */
+div#tarjeta {
+    /* border-style: Borde con franja negra */
+    border-style:solid;
+    /* border-color: Ajustar el color del borde */
+    border-color: #119DA4;
+    /* border-width: Ajusta la anchura del borde */
+    border-width: 5px;
+    margin: 20px;
+}
