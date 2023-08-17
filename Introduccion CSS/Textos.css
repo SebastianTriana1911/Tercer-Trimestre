@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+h2#propiedad {
+    /* font-family: Asignar un tipo de fuente para un texto */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-size: Asignar el tamaño de la letra */
+    font-size: 12pt;
+    /* font-weight: Indica el grosor de la letra */
+    font-weight: 12;
+}
+
+h2#fonts {
+    /* Se importa una de las fuentes de google fonts */
+    font-family: "Tilt Prism", cursive;
+}

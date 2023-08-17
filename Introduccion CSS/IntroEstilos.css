@@ -53,5 +53,6 @@ div#tarjeta {
     border-color: #119DA4;
     /* border-width: Ajusta la anchura del borde */
     border-width: 5px;
+    /* margin: Se calcula el espacion que ahi entre el contenedor con el archivo */
     margin: 20px;
 }

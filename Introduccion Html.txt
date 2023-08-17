@@ -328,3 +328,25 @@ numero de pixeles que se quiere que se tenga dicho contenedor (100px)
 
 - Alto: Para ajustar la altura de un contenedor se utiliza la propiedad height: y se le pasa el 
 numero de pixeles que se quiere que se tenga dicho contenedor (100px)
+
+----------------------------------------------------------------------------------------------
+TIPO DE BORDES CSS
+
+Todos los bordes se ven con la propiedad border-style
+
+- dashed: Borde con lineas en forma de puntillismo
+- dashed: Borde en forma de cuadritos chiquitos en forma de puntillismo
+- double: Borde con dos franjas delgadas
+- solid: Borde con franjas remarcadas
+
+----------------------------------------------------------------------------------------------
+TIPOGRAFIA Y FUENTES EN CSS
+
+Si se desea cambiar la tipografia de un texto en un archivo se podra realizar con la propiedad
+font-family: 
+
+Si se desea cambiar el tamaño de alguna fuente de un archivo se podra realizar con la propiedad
+font-size:
+
+
+
