@@ -348,5 +348,37 @@ font-family:
 Si se desea cambiar el tamaño de alguna fuente de un archivo se podra realizar con la propiedad
 font-size:
 
+Si se desea añadirle un poco mas de grosor a la letra (peso) se podra realizar con la propiedad
+font-weigth
 
+Para ahorrar la busqueda de tipografias que nos otorga css podremos importar la tipografia de 
+textos que hay en la pagina de google forms, y sera mas facil añarir una tipografia a un 
+texto
 
+----------------------------------------------------------------------------------------------
+ TAMAÑO DE DIV Y SPAN EN CSS 
+
+ Todos los div tienen un esapcion de toda la pantalla, esto quiere decir que cuando se le da 
+ algun tipo de color a este, se tomara toda la barra como espacion, el display de los div es un
+ display block
+
+ En cambio el span toma como espacio lo necesario segun el texto que tenga, esto quiere decir 
+ que el espacio que tomara el span sera del mismo tamaño de lo que este contenga, el display de 
+ los span es de inline 
+
+----------------------------------------------------------------------------------------------
+DISPLAYS EN CSS
+
+-inline: Cuando el display es inline toma como espacio el necesario que contenga dicho texto
+esto quiere decir que si por ejemplo el texto que contiene es hola, tomara los pixeles que tiene
+dicho texto como contenedor
+
+- block: Cuando el display es block toma todo el espacio de la pantalla sin importar la cantidad 
+de texto
+
+----------------------------------------------------------------------------------------------
+FLOAT EN CSS
+
+El parametro float nos permite modificar, mover de lugar cualquier etiqueta la cual su display sea 
+inline, este parametro puede mover dichas etiquetas al lugar que uno de pase, como izquierda derecha
+centro etc

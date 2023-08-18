@@ -1,0 +1,10 @@
+div#div1, #div2 {
+ background-color: aqua;
+ display: inline;  
+}
+
+span#span {
+    background-color: blue;
+    color:white;
+    float: left
+}
