@@ -1,0 +1,63 @@
+div {
+    /* Se asigna un borde de 4 pixeles de grosor */
+    border: 4px solid;
+    /* Se asigna la propiedad padding para tener un espacio 
+    de 5 pixeles dentro del borde que se asigno */
+    padding: 5px;
+    /* Se le asigna un color a el borde de color azul */
+    border-color: blue;
+    /* Se asigna la propiedad margin de 10 pixeles que define el 
+    espacio que tendra dicho borde del resto de contenido dentro del
+    archivo */ 
+    margin: 10px;
+}
+
+/* Posicionamiento relativo - se posiciona en relacion al 
+posicionamiento original*/
+ div#relative {
+    /* Se asigna una propiedad position relative para cambiar la 
+    posicion static que viene por defecto */
+    position: relative;
+    /* Se asigna la propiedad left para mover a la izquierda 80 pixeles 
+    el contenedor */
+    left: 80px;
+ }
+
+ /* Posicionamiento fijo - se posiciona en relacion a la pantalla */
+ div#fixed {
+    /* Se asigna la propiedad position fixed */
+    position: fixed;
+    /* Se asigna la propiedad bottom para que dicho contendedor se pueda manipular
+    de arriba a bajo, en este caso se manipula a 0 pixeles para que dicho contenedor
+    este en la parte inferior izquierda de la pantalla*/
+    bottom: 0px;
+    /*Se asigna la propiedad left con una cantidad de 0 pixeles que indique que el 
+    contenedor este a 0 pixeles del lado ixquierdo */
+    left: 0px;
+    background-color: black;
+    color: white;
+    border-color: red;
+ }
+
+/* Posicionamiento asoluto */
+ div#absolute {
+    background-color: azure;
+    position: absolute;
+    bottom: 30px;
+    right: 0px
+ }
+
+div#r {
+    position : relative;
+    background-color: blueviolet;
+    border-color: blue;
+    height: 100px;
+ }
+
+/* Posicionamiento "pegajoso" - Al hacer scroll modifica su posicionamiento 
+relative -> fixed */
+ div#sti{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+ }

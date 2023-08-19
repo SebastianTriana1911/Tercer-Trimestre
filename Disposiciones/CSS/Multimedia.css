@@ -1,0 +1,54 @@
+/* Todo el archivo tendra dicha propiedad */
+* {
+    /* Es el espacio que se crea al rededor de un elemento */
+    padding: 0px;
+    /* Establece un margen alrededor del elemento como en este 
+    caso es 0 no tendra ninguna margen */
+    margin: 0px;
+}
+
+img#principal {
+    /* Se asigna una propiedad width con en lamaño que se desea que tenga
+    el elemento, en vez de ponerlo en pixeles se pone con vw, que permite 
+    que la imagen vaya acorde con el tamaño de la pantalla en la que esta*/
+    width: 100vw;
+    /* Se asigna una propiedad opaciti que en este caso tendra 0.3, lo que
+    es masomenos opacio*/
+    opacity: 1;
+}
+
+/* A la hora de asignarle a una imagen la propiedad hover con la propiedad 
+opacity, cada que se pase por dicha imagen con el raton la imagen tendra la 
+opacidada a la que se asigne al parametro opacity */
+img#principal:hover{
+    opacity: 0.3;
+}
+
+
+div#galeria {
+    /* Se abre una propiedad display: flex que hace que todos los componentes
+    se homogenisen en una sola linea*/
+    display: flex;
+    /* Se abre una propiedad flex-wrap que nos permite que el elemento 
+    se acople a la pantalla a la que este expuesto */
+    flex-wrap: wrap;
+    /* Se abre una propiedad gap que permite crear un espacion entre los 
+    elementos que estan homogenisados por la propiedad flex-wrap */
+    gap: 10px;
+}
+
+img#imagen{
+    /* Se abre una propiedad width donde cada imagen tendra una anchura de
+    475 pixeles */
+    width: 475px;
+}
+
+/* Cada una de las imagenes a la hora de pasar por encima con el raton dicha 
+imagen trendra una opcacidad de 0.3 */
+img#imagen:hover {
+    opacity: 0.3;
+    /* Se abre una propiedad cursor pointer, significa que a la hora de pasar 
+    por alguna imagen cambiara el aspecto del raton como si se fuera a clickiar
+    un link */
+    cursor: pointer;
+}

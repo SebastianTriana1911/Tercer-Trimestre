@@ -382,3 +382,126 @@ FLOAT EN CSS
 El parametro float nos permite modificar, mover de lugar cualquier etiqueta la cual su display sea 
 inline, este parametro puede mover dichas etiquetas al lugar que uno de pase, como izquierda derecha
 centro etc
+
+----------------------------------------------------------------------------------------------
+POSICIONAMIENTOS EN CSS
+
+-static: El posicionamiento static es el que viene por defecto, dicho posicionamiento no se puede 
+ver afectado por ninguna propiedad que se le asigne
+
+-position: relative: el posicionamiento relativo nos permite mover la etiqueta que se le pase y que
+funcione como un contenedor 
+
+- position: fixed: El posicionamiento fixed nos elimina todo el espacio restante entro lo que 
+contenga y el resto del archivo, y mantedra la etiqueta que se le asigno dicha posicion fijada
+en el archivo, por consiguiente independientemente de donde uno este no se movera la etiqueta
+a la que se le asigno dicha posicion
+
+- position: absolute: La posicion absolita hace que un elemento se coloque respecto a su contenedor
+posicionado mas cercano   
+Si queremos posicionar un elemento dentro de otro lo mas recomendable es asignarle una posisicion 
+relative al contenedor que contenga el elemento que se desea posicionar, y a dicho elemento asignarle
+la posicion absoluta
+
+- position:sticky: La posicion sticky permite fijar un contenedor en una parte de la pantalla y esta 
+mientras este en movimiento quede estatica en el lugar de la parte superior de la pantalla con la 
+propiedad top
+
+----------------------------------------------------------------------------------------------
+DISPOSICIONAMIENTO FLEX BOX EN CSS
+
+Que hace es display:flex, esta propiedad permite que todo lo que este dentro de este contenedor
+se posicione de una manera ordenada, por defecto coloca cada elemento por filas
+
+Ademas permite que cada uno de los elementos se posicione segun el tamaño de la pantalla
+
+Nota: A cada elemento al cual no se le haya asignado una altura por defecto el elemento contendra
+la misma altura que el contenedor que lo contiene
+
+----------------------------------------------------------------------------------------------
+JUSTIFY-CONTENT
+
+Justify- content nos sirve para posicionar los elementos que tiene por dentro el contenedor y
+los posiciona con relacion al eje principal el cual es la posicion horizontal de todo lo que se
+asigne como contenedor
+
+- start: Cambia la posicion del elemento a como viene por defecto que es en la parte superior
+izquierda
+
+- end: Cambia la posicion del elemento al lado superior derecho
+
+- space-between: Todo el espacio sobrante que queda entre los elementos y el contenedor lo 
+distribulle por cada elemento que se encuentre dentro del contenedor
+
+----------------------------------------------------------------------------------------------
+FLEX-WRAP: WRAP
+
+Dicha propiedad permite acoplar cada elemento que tenga el contenedor segun el tamaño de la 
+pantalla pero siempre guardando la integridad del tamaño de cada uno de los elementos, por ejemlo 
+si hay 3 filas de contenedores de 20 pixeles cada uno pero el espacion de la pantalla es muy 
+reducido para que dichos contenedores quepan pues esta propiedad hara que cada uno de los contenedores
+se posicione de una manera la cual no afecte su caracteristica o composicion
+
+----------------------------------------------------------------------------------------------
+aling-items: center
+
+Cada elemento que no contenga una altura con dicha propiedad el elemento se acoplarara segun el 
+contenido que tenga, significa que mientras que el elemento no contanga nada el elemento no tendra
+altura, en cambio si este si contiene algo la altura va a ser segun ese algo
+
+----------------------------------------------------------------------------------------------
+CONTENEDORES CON OVERFLOW 
+
+- hidden: Hidden nos ayudara para que todo lo que sobresalga y que este dentro de un contenedor
+se oculte y solo se muestre lo que alcanze a estar dentro de este
+
+- scroll: Scroll nos ayudara a crear una barra de scroll la cual nos permitira subir y bajar el 
+texto que contenga un contenedor para asi porder visualizar el elemento completo
+
+- visible: Visible es el que viene por defecto a la hora de declarar un overflow, este tiene la 
+particularidad de que segun sea el tamaño del contenedor se vera visualizado el elemento, si este
+es mas grande que el contenedor transpasara haciendo que el elemento se visualize por encima del 
+contenedor
+
+- Auto: Auto nos permite crear un scroll segun lo necesitemos por ejemplo si el elemento solo 
+necesita de un scroll que direccione de arriba a abajo, con el everflow: auto el escroll se posicionara
+en dicho lugar para poder direccionar el elemento, que si es de arriba abajo el scroll estaria en el 
+eje x. 
+A diferencia del scroll normal que este lo que hace es añadirnos el scroll del eje x y el eje y sin
+importar las dimenciones del elemento que este dentro del contenedor
+
+Nota: Si se desea que un scroll este en un eje determinado se puede asignar con la propiedad everflow-x
+o everflow-y 
+
+----------------------------------------------------------------------------------------------
+OPACITY CSS
+
+La propiedad opacity nos permite graduar la opacidad de una imagen, los valores que tiene esta 
+propiedad son: 
+0 = Totalmente transparente
+1 = Imagen normal
+Asi que para ver el resultado de dicha propiedad es necesario gradua entre estos dos valores
+
+----------------------------------------------------------------------------------------------
+HOVER CSS
+
+La propiedad hover nos permite que a la hora de pasar con el raton por dicha imagen se establesca 
+un tono de opacidad segun se lo demos con la propieda opacity
+Ejemplo
+img#(nombre del id o class que se le haya asignado a la imagen):hover{
+    opacity: 1;
+}
+
+----------------------------------------------------------------------------------------------
+GAP CSS
+
+Cuando tenemos una propiedad flex-wrap y como dicha propiedad homogenisa todos los elementos en
+uno solo, es necesario separarlos por algo (hacerles una margen) y para eso sirve la propiedad
+gap para generar una especie de margen entre los elementos que estan homogenisados por el flex-wrap 
+
+----------------------------------------------------------------------------------------------
+CURSOR CSS
+
+La propiedad cursor: pointer nos permitira que el raton a la hora de pasar por el elemnto que 
+contenga dicha propiedad cambie su aspecto al que se pone en las paginas webs cuando uno quiere 
+abrir algun link
