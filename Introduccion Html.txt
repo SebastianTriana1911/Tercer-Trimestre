@@ -70,6 +70,12 @@ enlace y por ultimo cerrar la etiqueta
 Ejemplo:
 <a href = "https://google.com"> Enlace externo </a>
 
+A la hora de clickiar dicho enlace se cargara dentro de la misma pagina de donde se selecciono,
+si queremos que esto no suceda es importante despues de colocar el enlace colocar el parametro
+target= "_blank" esto ara que a la hora de ingresar a ese enlace se nos abra en otra pagina
+Ejemplo:
+<a href = "https://google.com" target = "_blank"> Enlace externo </a>
+
 ---------------------------------------------------------------------------------------------
 LISTAS HTML
 
@@ -290,6 +296,10 @@ COMANDOS CSS
 
 - font-size: cambia el tamaño de la etiqueta que se le este pasando, (Se le debe pasar el numero
 de tamaño que se le desea dar seguido de pt)
+La propiedad font-size puede tener 2 parametros esenciales
+1. xx-small: Vuelve el texto en un tamaño pequeño 
+2. xx-large: Vuelve el texto en un tamago muy grande
+
 
 - text-transform: Especifica el cambio entre mayúsculas y minúsculas del texto de un elemento.
 Puede ser usada para que un texto aparezca completamente en mayúsculas, en minúsculas, o con la 
@@ -483,13 +493,49 @@ propiedad son:
 Asi que para ver el resultado de dicha propiedad es necesario gradua entre estos dos valores
 
 ----------------------------------------------------------------------------------------------
-HOVER CSS
+SUUDOCLASES EN CSS
 
-La propiedad hover nos permite que a la hora de pasar con el raton por dicha imagen se establesca 
+- Hover: La subclase hover nos permite que a la hora de pasar con el raton por dicha imagen se establesca 
 un tono de opacidad segun se lo demos con la propieda opacity
-Ejemplo
+EJEMPLO
 img#(nombre del id o class que se le haya asignado a la imagen):hover{
     opacity: 1;
+}
+
+- First-child: La subclase first-child nos permite alterar el primer elemento que contenga un 
+contenedor 
+EJEMPLO
+#listado p:first-child {     /* Alterara el primer elemento con etiqueta p que se encuente en el
+    color: blue              selector listado */               
+}
+
+#listado :first-child {      /* Alterara el primer elemento sin importar la etiqueta que se encuente
+    color: blue              en el selector listado */
+}
+
+p :first-child {             /* Alterara todas las etiquetas p que se encuentren como primer elemento 
+    color: blue              en alguna etiqueta o en el archivo                           
+}
+
+- Link: La subclase link solo funciona con las etiquetas <a>, esta subclase nos permite colocarle un 
+color a los enlaces los cuales no se hayan ingresado
+EJEMPLO
+a:link{
+    color: blue
+}
+
+- Visited: La subclase visited solo funciona con las etiquetas <a>, esta subclase nos permite modificar
+algun enlace que ya se haya abierto
+EJEMPLO
+a:visited{
+    color: blue
+}
+
+- active: La subclase active solo funciona con las etiquetas <a>, esta subclase nos permitira modificar 
+el color de un enlace a la hora en la que nosotros hagamos click en este
+EJEMPLO
+a:active{
+    color: blue
 }
 
 ----------------------------------------------------------------------------------------------
@@ -525,3 +571,46 @@ OBJECT-FIST: COVER
 
 Este parametro redimenciona el elemento en toda la pantalla ocupando cualquier espacion en blanco
 que este contenga
+
+----------------------------------------------------------------------------------------------
+SELECTORES ANIDACION
+
+La anidacion de selectores nos permite que a la hora de querer modificar algun elemento de nuestro 
+codigo html no es necesario a cada una de las etiquetas ponerles un selector, por ejemplo si una 
+catidad de etiquetas p estan dentro de un contenedor div y queremos modificar cada una de ellas sin
+necesitar colocarles el mismo selector, en nuestro archivo css bastara con simplemente asignar el
+selector del contenedor que tiene todas las etiquetas p, seguido de una p, esto hara que css busque
+el contenedor que tiene dicho selector y modifique todas las etiquetas p que tiene dicho contenedor
+EJEMPLO
+div#contenedor p {
+    color : blue
+}
+
+----------------------------------------------------------------------------------------------
+PSEUDOELEMENTOS CSS
+
+Los seudoelementos se aplican con :: a diferencia de las pseudo clases que se aplican con :
+los principales pseudo elementos con 
+
+- before: Before significa antes, si se acompaña este pseudo elemento con la propiedad content
+= "", significara que antes de lo que haya en la etiqueta a la que se le planteo el pseudo elemento
+ira lo que se paso entre las comillas del parametro content
+
+- After: After significa despues, la explicacion es la misma que el pseudo elemento before solo que 
+los cambios se realizan adelante, osea despues de lo que contenga la etiqueta que se desea modificar
+
+- first-letter: Modificara el primer elemento o el primer caracter que contenga la etiqueta que se 
+le esta pasando el pseudo elemento
+
+- first.line: Modifica la primera linea del elemento que por lo general es texto de la etiqueta que 
+se le este pasando
+
+- selection: Mofifica lo que se marque con el raton, osea el texto seleccionado, el color por defecto
+que aparece es el azul, pero si se quiere se puede cambiar dicho color por algun otro
+
+- marker: modifica las listas que se le pase, pero solo modificara las viñetas o los numeros si es una 
+lista ol 
+EJEMPLO
+div#lista ol li::marker{
+    color: blue
+}

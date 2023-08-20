@@ -1,0 +1,45 @@
+/* https://www.w3schools.com/css/css_pseudo_elements.asp */
+
+div#contenedor {
+    width: 300px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+span#comilla {
+    font-style: italic;
+}
+/* Pseudo elemento before se posiciona antes de lo que contenga alguna etiqueta*/
+span#comilla::before {
+    /* Añade lo que se le pase dentro de las comillas */
+    content: "-- ";
+}
+
+/* Pseudo elemento after se posiciona despues de lo que contenga alguna etiqueta*/
+span#comilla::after {
+    /* Añade lo que se le pase dentro de las comillas */
+    content: "holaaaaaaaa";
+    /* A lo que se le paso dentro de las comillas lo modifica para que tenga un tamaño
+    de letra grande */
+    font-size: xx-large;
+}
+
+div#cuento {
+    color: white;
+    background-color: black;
+    width: 300px;
+
+}
+
+#cuento p::first-letter{
+    font-size : xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cuento p::first-line{
+    color:bisque
+}
+
+div#lista ol li::marker{
+    color: blue
+}

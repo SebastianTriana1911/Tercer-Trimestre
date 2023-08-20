@@ -1,0 +1,63 @@
+<!--https://www.w3schools.com/css/css_pseudo_classes.asp-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo clases</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            #hover{
+                width: 500px;
+                height: 200px;
+                background-color: aqua;
+            }
+
+            /*Subclase hover */
+            #hover:hover { /* Se activa cuando el raton pasa por encima del elemento */
+                background-color: blanchedalmond;
+            }
+
+            #listado{
+                padding: 10px;
+                margin: 10px;
+                background-color: aquamarine;
+            }
+            
+            /* Subclase first-child */
+            #listado :first-child { /*Altera el primer elemento de un contenedor*/
+                color:blue
+            }
+
+            a:link { /* Cambia el color de todos los links*/
+                color: green
+            }
+
+            a:visited { /* Cambia el color de los links ya visitados */
+                color: blue
+            }
+
+            a:hover { /* Cuando el raton pasa por encima del link cambia el color del mismo*/
+                color :black
+            }
+
+            a:active { /* A la hora de clickiar se cambia el color del link */
+                color: blueviolet
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "hover">
+            <p> Esto va hacer referencia a un texto largo</p>
+        </div>
+        <div id = "listado">
+            <p>Parrafo 1</p>
+            <p>Parrafo 2</p>
+            <p>Parrafo 3</p>
+        </div>
+        <a href = "http://google.com" target = "_blank">Enlace a Google</a>
+    </body>
+</html>

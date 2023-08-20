@@ -1,0 +1,10 @@
+/* Selectores de anidacion, buscara todas las etiquetas 
+p que encuentre dentro del selector contenedor de una etiqueta
+div */
+div#contenedor p {
+    color : blue
+}
+
+p {
+    color: red
+}
