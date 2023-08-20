@@ -128,6 +128,26 @@ La etiqueta textarea nos permite tener un campo con mayor espacion y donde se pu
 poder que un usuario ingrese datos, es casi lo mismo que la etiqueta input solo que esta permite
 un espacio de texto mas extenso
 
+A la hora de declarar alguna de estas dos etiquetas existe unas propiedades muy importantes:
+- id - class: Esto nos permite asignarle una variable a cada etiqueta
+- type: Segun el input que vallamos a realizar, osea si vamos a realizar un input tipo texto tipo password etc, se ke asigna al input
+- placeholder: Esta metodo nos permite que el input contenga un texto de ayuda, por ejemplo, "Escriba su nombre"
+
+Cuando un input o un textarea contienen el mismo nombre de id, para diferenciar uno de otro se puede realizar por medio del type y colocandole el tipo de dato que tiene el input que se desea modificar por medio de unas llaves
+Ejemplo 
+#input[type="text"]{
+
+}
+textarea cuanta con una propiedad especifica para dicha etiqueta la cual es la propiedad resize la cual su propiedad nos ayuda a la redimencion del contenedor de texto
+
+- Vertical: Al pasarle el parametro vertical a la propiedad resize solo se podra redimencionar el contenedor de manera Vertical
+
+- Horizontal: Nos permite redimencionar de manera horizontal
+
+- None: no permite redimencionar dicho contenedor
+
+
+Exite el metodo de seleccionar alguna opcion, para que esto se vea reflejado es necesario abrir la etiqueta <select> y dentro abrir una eiqueta <option> la cual reflejara las opciones que se tendran al desplegrar el menu 
 ----------------------------------------------------------------------------------------------
 BOTONES HTML
 
@@ -246,7 +266,7 @@ la cual no tiene apertura de cierre por ende dentro de la apretura hay que añad
 rel = "stylesheet" seguido del href = "" el cual dentro de las comillas se le debe de colocar
 el lugar en donde se encuentra nuertro archivo css
 
-----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 CSS
 
 La manera de utilizar css es escribiendo las etiquetas las cuales deseamos manipular, cambiandole
@@ -348,6 +368,15 @@ Todos los bordes se ven con la propiedad border-style
 - dashed: Borde en forma de cuadritos chiquitos en forma de puntillismo
 - double: Borde con dos franjas delgadas
 - solid: Borde con franjas remarcadas
+
+- border: none - Esta propiedad elimina el borde de cualquier etiqueta input o textarea
+- border-bottom: (numero de pixeles) solid (color); Esta propiedad hacer que la linea inferior de los bordes del input quede con las propiedades deseadas que uno le pase como paramtro 
+- outline: none: Esta propiedad lo que hace es que al seleccionar el espacio del input o textarea, el borde no se muestra, ya que este asi no tenga borde por defecto a la hora de seleccionarlo se mostrara
+
+- box-shadow: Esta propiedad modifica el contorno de un elemento sus parametros son 0 0 (la cantidad de pixeles que se desea que tenga el contorno) (el color del contorno)
+Ejemplo
+box-shadow: 0 0 10px black;
+
 
 ----------------------------------------------------------------------------------------------
 TIPOGRAFIA Y FUENTES EN CSS
@@ -493,7 +522,7 @@ propiedad son:
 Asi que para ver el resultado de dicha propiedad es necesario gradua entre estos dos valores
 
 ----------------------------------------------------------------------------------------------
-SUUDOCLASES EN CSS
+PSEUDOCLASES EN CSS
 
 - Hover: La subclase hover nos permite que a la hora de pasar con el raton por dicha imagen se establesca 
 un tono de opacidad segun se lo demos con la propieda opacity
@@ -537,6 +566,8 @@ EJEMPLO
 a:active{
     color: blue
 }
+
+focus: La pseudoclase focus nos permite cambiar las propiedades a la hora de seleccionar el segmento de un input o un textarea
 
 ----------------------------------------------------------------------------------------------
 GAP CSS
@@ -614,3 +645,5 @@ EJEMPLO
 div#lista ol li::marker{
     color: blue
 }
+
+- placeholder: Nos permite modificar el texto de ayuda que tenga alguna etiqueta de insercion 

@@ -1,0 +1,56 @@
+input {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    /* Corbatura de los bordes */
+    border-radius: 20px;
+}
+
+/* Cuando hay varias etiquetas input con el mismo selector se puede 
+hacer referencia a una sola etiqueta colocando el tipo de dato que contendra dicha etiqueta */
+#input[type="password"] {
+    border-radius: 0px;
+    width: 250px;
+    color: blue;
+    /* Hace referencia a que no hayan bordes*/
+    border: none;
+    border-bottom: 1px solid black;
+    /* outline permite que se elimine el borde que aparece por defecto a la hora de uno hacer click a algun input */
+    outline: none
+}
+
+/* El pseudo clase focus permite podificar todo lo que suceda a la hora de seleccionar alguna etiqueta */
+#input[type="password"]:focus{
+    border-bottom: 3px solid red;
+}
+
+/* Cuando uno asigna un placeholder desde el input lo podra modificar pasandole el pseudo elemento placeholder */
+#input[type="password"]::placeholder{
+    color: red
+}
+
+input#nombre {
+    color:blanchedalmond;
+    width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: black;
+    /* La propiedad box-shadow permite modificarle un contorno a un contenedor de insercion */
+    box-shadow: 0 0 10px chocolate;
+}
+
+input#nombre::placeholder{
+    color: blanchedalmond
+}
+
+textarea#nombre2 {
+    resize: none;
+}
+
+select {
+    background-color: blanchedalmond;
+    width: 100%;
+    border-radius: 10px;
+}

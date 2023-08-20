@@ -1,0 +1,62 @@
+<!--https://dribbble.com/shots/popular/web-design-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/Login.css">
+</head>
+<body>
+    <div id = "contenedor">
+        <h3>Registrate</h3>
+        <div id = "button">
+            <button id = "boton-google">
+                <!--<picture> Crea un boton chiquito-->
+                <picture>
+                    <img src = "https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt = "logo-google"/>
+                </picture>
+                <span>Registrese con Google</span> 
+            </button>
+            <button id = "boton-twitter">
+                <picture>T</picture>
+            </button>
+        </div>
+        <div id = "separador">
+            <!--<hr> Crea una linea horizontal -->
+            <hr>
+            <span>Or</span>
+            <hr>
+        </div>
+        <form action = "" method= "">
+            <div id = "inputs">
+                <!--Id del input debe de ser igual al for del label para que
+                se pueda tener conexion-->
+                <label for = "name">
+                    <span>Name</span>
+                    <input id = "name" name = "name"/>
+                </label>
+                <label for = "username">
+                    <span>Username</span>
+                    <input id = "username" name = "username"/>
+                </label>
+            </div>
+            <label for = "email">
+                <span>Email</span>
+                <input id = "email" name = "email"/>
+            </label>
+            <label for = "password">
+                <span>Password</span>
+                <input id = "password" name = "password" placeholder="6+ characters "/>
+            </label>
+            <label for = "checkbox" id = "checkbox">
+                <!--Type checkbox recrea un cuadrito que a la hora de clickiar sale un 
+                chulito-->
+                <input type = "checkbox" id = checkbox/>
+                <span>Acepto todo termino y condiciones y el aviso legar</span>
+            </label>
+            <label for = "boton" id = "boton">
+                <button type = "submit">Crear cuenta</button>
+            </label>
+        </form>
+    </div>
+</body>
+</html>
