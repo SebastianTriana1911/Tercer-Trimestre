@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+video#video {
+    /* 100% de la pantalla  de archo*/
+    width: 100vw;
+    /* 100% de la pantalla a lo largo*/
+    height: 100vh;
+    /* Redimenciona el elemento en toda la pantalla o contenedor
+    si este contiene espacios sin ocupar */
+    object-fit: cover;
+    /* Hacer que el elemento se adapte a su contenedor */
+    position: fixed;
+}
+
+div#frase {
+    /* Hace que el elemento se pase al frente de otro elemento */
+    position: relative;
+    /* Permite que el elemento se vea al 100% sin importar el largo
+    de la pantalla*/
+    height: 100vh;
+    display: flex;
+    /* Hace que todos los elementos esten en una columna */
+    flex-direction: column;
+    /* Hace que el elemento se posicione en el centro del eje y */
+    justify-content: center;
+    /* Hace que el elemento se posicione en el centro del eje x */
+    align-items: center;
+}
+
+h1#t {
+    color:white
+}
+
+button#boton {
+    margin: 10px;
+}

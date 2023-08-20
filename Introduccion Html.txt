@@ -505,3 +505,23 @@ CURSOR CSS
 La propiedad cursor: pointer nos permitira que el raton a la hora de pasar por el elemnto que 
 contenga dicha propiedad cambie su aspecto al que se pone en las paginas webs cuando uno quiere 
 abrir algun link
+
+----------------------------------------------------------------------------------------------
+WIDTH: 100VW
+
+Esta propiedad tal cual nos permite ver el elemento que lo contenga en el 100% de la pantalla sin
+impoertan el tamaño de la pantalla pues si el tamaño se altera el elemento seguira viendose 
+completamente a lo ancho de la pantalla
+
+----------------------------------------------------------------------------------------------
+HEIGHT: 100VH
+
+Esta propiedad nos sirve pa lo mismo que nos sirve el width: 100vw solo que a lo largo, osea que 
+por mas que se altere el tamaño de la pantalla a lo largo dicho elemento se seguira viendo en su
+100%
+
+----------------------------------------------------------------------------------------------
+OBJECT-FIST: COVER
+
+Este parametro redimenciona el elemento en toda la pantalla ocupando cualquier espacion en blanco
+que este contenga
