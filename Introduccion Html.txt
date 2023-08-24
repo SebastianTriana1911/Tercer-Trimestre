@@ -647,3 +647,11 @@ div#lista ol li::marker{
 }
 
 - placeholder: Nos permite modificar el texto de ayuda que tenga alguna etiqueta de insercion 
+
+
+
+
+bottom añade abajo
+    left hacia la izquierda
+    right hacia la derecha 
+    auto centra todo */
