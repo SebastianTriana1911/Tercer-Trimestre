@@ -1,0 +1,163 @@
+section#seccion1 {
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+    border: 10px solid blue;
+    position: relative;
+}
+
+section#cuadrito1 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+    position: absolute;
+}
+
+section#cuadrito2 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+    position: absolute;
+    left: 205px;
+}
+
+section#cuadrito3 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+    position: absolute;
+    left: 410px;
+}
+
+section#cuadrito4 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+    position: absolute;
+    top: 205px;
+}
+
+section#cuadrito5 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+    position: absolute;
+    top: 205px;
+    left: 205px;
+}
+
+section#cuadrito6 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+    position: absolute;
+    top: 205px;
+    left: 410px;
+}
+
+section#cuadrito7 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+}
+
+section#cuadrito8 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 205px;
+}
+
+section#cuadrito9{
+    width: 190px;
+    height: 190px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 410px;
+}
+
+main#caja-1 {
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+    border: 10px solid blue;
+}
+
+section#seccion-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+article#cuadrito-1 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+}
+
+article#cuadrito-2 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+}
+
+article#cuadrito-3 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+}
+
+
+section#seccion-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+article#cuadrito-4 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+}
+
+article#cuadrito-5 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+}
+
+article#cuadrito-6 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+}
+
+section#seccion-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 15px;
+}
+
+article#cuadrito-7 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+}
+
+article#cuadrito-8 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+}
+
+article#cuadrito-9 {
+    width: 190px;
+    height: 190px;
+    background-color: black;
+}

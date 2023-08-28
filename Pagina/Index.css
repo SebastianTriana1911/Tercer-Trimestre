@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Montserrat&family=Poppins:wght@300&family=Tilt+Prism&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(13, 2, 33);
+}
+
+section {
+    display: flex;
+    color: white;
+    font-size: 16pt;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+section #barra {
+    width: 500px;
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+}
+
+span#intro {
+    color:greenyellow
+}
+
